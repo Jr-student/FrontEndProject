@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-80 transition-all;
+}
+
+.slick-dots .slick-active div {
+  @apply bg-primary h-4/5 w-4/5;
+}
+
+.slick-dots div {
+  @apply !m-0 !mt-9;
+}
