@@ -11,7 +11,6 @@ const MenuWrapper = () => {
     if (isLoading) return 'Yükleniyor...'
 
     if (error) return 'An error has occurred: ' + error.message
-    data.data.map((item) => {item.name})
   return (
     <div className="container mx-auto  mb-16">
       <div className="flex flex-col items-center w-full">
@@ -26,11 +25,9 @@ const MenuWrapper = () => {
         </div>
       </div>
       <div className="mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-        {data.data.map((prods)=>{
-          <MenuItem key={prods.id} productsName={prods.name}/>
-          console.log(prods.name)
-        })}
-        {/* <MenuItem /> */}
+        {data.data.map((prods)=>(
+          <MenuItem key={prods.id} products={prods}/>
+        ))}
       </div>
     </div>
   );

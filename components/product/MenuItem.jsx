@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 
-const MenuItem = (props) => {
-  console.log(productsName)
-  const productsName = props
+const MenuItem = ({products}) => {
   return (
     <div>
       <div className="bg-secondary rounded-3xl">
@@ -16,7 +14,8 @@ const MenuItem = (props) => {
           </Link>
         </div>
         <div className="p-[25px] text-white">
-          <h4 className="text-xl font-semibold">{productsName}</h4>
+          <h4 className="text-xl font-semibold">{products.name}</h4>
+          {console.log(products)}
           <p className="text-[15px]">
             {products.description}
           </p>
