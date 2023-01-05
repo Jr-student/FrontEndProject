@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 import { adminSchema } from '../../schema/admin';
 
 const Login = () => {
-    const onSubmit = async (values,actions) => {
+    const onSubmit = async (values, actions) => {
         await new Promise((resolve) => setTimeout(resolve, 4000));
         actions.resetForm();
       }

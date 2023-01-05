@@ -2,7 +2,6 @@ import React from "react";
 import About from "../../components/About";
 import Carousel from "../../components/Carousel";
 import MenuWrapper from "../../components/product/MenuWrapper";
-import Reservation from "../../components/Reservation";
 
 const Index = () => {
   return (
@@ -10,7 +9,6 @@ const Index = () => {
       <Carousel />
       <MenuWrapper />
       <About />
-      <Reservation />
     </React.Fragment>
   );
 };

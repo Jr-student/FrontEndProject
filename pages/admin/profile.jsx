@@ -8,10 +8,12 @@ import Products from '../../components/admin/Products';
 import Order from '../../components/admin/Order';
 import Password from '../../components/profile/Password';
 import Category from '../../components/admin/Category';
+import AddProduct from '../../components/admin/AddProduct';
 
 const Profile = () => {
 
     const [tabs, setTabs] = useState(0);
+    const [isProductModal, setIsProductModal] = useState(false);
 
     
   return (
@@ -48,6 +50,13 @@ const Profile = () => {
         {tabs === 0 && <Products/>}
         {tabs === 1 && <Order/>}
         {tabs === 2 && <Category/>}
+        {isProductModal && <AddProduct setIsProductModal={setIsProductModal} />}
+      <button
+        className="btn-primary !w-12 !h-12 !p-0 absolute bottom-14 right-10 text-4xl"
+        onClick={() => setIsProductModal(true)}
+      >
+        +
+      </button>
     </div>
   )
 }

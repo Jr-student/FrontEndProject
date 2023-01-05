@@ -1,12 +1,13 @@
-import React from 'react'
-import MenuWrapper from '../../components/product/MenuWrapper'
+import axios from "axios";
+import React from "react";
+import MenuWrapper from "../../components/product/MenuWrapper";
 
 const Index = () => {
   return (
     <div className="pt-10">
-      <MenuWrapper/>
+      <MenuWrapper />
     </div>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

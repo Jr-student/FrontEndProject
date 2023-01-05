@@ -6,7 +6,7 @@ const Order = () => {
   return (
     <div>
         <div className="lg:p-8 lg:mt-0 mt-2 flex-1">
-            <Title addClass="text-[40px]">Şifre</Title>
+            <Title addClass="text-[40px]">Siparişlerim</Title>
         <div className="overflow-x-auto w-full mt-5">
             <table className="w-full text-sm text-center text-gray-500 min-w-[1000px]">
                 <thead className="text-xs text-gray-400 uppercase bg-gray-700">
